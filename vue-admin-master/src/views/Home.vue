@@ -75,7 +75,7 @@
 	export default {
 		data() {
 			return {
-				sysName:'爱购商城后台管理',
+				sysName:'拼夕夕后台管理系统',
 				collapsed:false,
 				sysUserName: '',
 				sysUserAvatar: '',

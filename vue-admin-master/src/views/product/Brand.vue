@@ -81,14 +81,11 @@
         <!--新增界面-->
         <el-dialog title="新增" v-model="addFormVisible" :close-on-click-modal="false">
             <el-form :model="addForm" label-width="80px" :rules="addFormRules" ref="addForm">
-                <el-form-item label="姓名" prop="name">
-                    <el-input v-model="addForm.name" auto-complete="off"></el-input>
+                <el-form-item label="品牌" prop="brand">
+                    <el-input v-model="addForm.brand" auto-complete="off"></el-input>
                 </el-form-item>
-                <el-form-item label="性别">
-                    <el-radio-group v-model="addForm.sex">
-                        <el-radio class="radio" :label="1">男</el-radio>
-                        <el-radio class="radio" :label="0">女</el-radio>
-                    </el-radio-group>
+                <el-form-item label="英文名" prop="englishName">
+                    <el-input v-model="addForm.englishName" auto-complete="off"></el-input>
                 </el-form-item>
                 <el-form-item label="年龄">
                     <el-input-number v-model="addForm.age" :min="0" :max="200"></el-input-number>
